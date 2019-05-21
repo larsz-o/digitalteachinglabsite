@@ -1,0 +1,37 @@
+.category-card {
+    flex-grow: 1;
+    align-self: flex-start;
+}
+.flex-box {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: nowrap;
+    justify-content: center; 
+    align-items: stretch;
+}
+.header {
+    align-self: center;
+    width: 100%;
+}
+.hero-spot{
+    background-color: #023479;
+    color: white; 
+}
+.team-bio{
+    flex-grow: 2;
+    align-self: auto; 
+    padding: 5vh;
+    font-size: 1.2em; 
+}
+#team-heading { 
+    margin-bottom: 5vh; 
+    font-size: 1.4em;
+}
+.team-photo{
+    align-self: flex-start;
+    height: 200px;
+    /* let's just work on getting images that are the same size */
+}
+#title {
+    font-size: 3em; 
+}
