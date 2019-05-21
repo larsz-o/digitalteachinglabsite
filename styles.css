@@ -29,8 +29,8 @@ button {
       font-size: 1.5em; 
   }
   .card-container {
-     width: 100%;
-
+    width: 100%;
+    margin-top: 10vh;
   }
   .card-img{
       height: 300px;
@@ -50,22 +50,19 @@ button {
     justify-content: flex-end; 
 }
 .header {
-    align-self: center;
+    text-align: right;
     width: 100%;
-    margin: 2%;
-}
-#hero-img {
-    width: 70%;
-    align-self: flex-end;
-    border-radius: 5%;
-    border: 2px solid #E8BD0F;
+   font-size: 1.2em;
 }
 .hero-spot{
     background-color: #023479;
-    color: white; 
-    height: 40vh;
+    height: 65vh;
+    width: 100%; 
+    padding: 2%;
+    background-image: url('http://blogs.brandeis.edu/instructionaldesign/files/2019/05/adult-brickwalls-businesswoman-7363.jpg');
+    background-position: right bottom;
+    background-size: cover; 
 }
-
 .team-bio{
     flex-grow: 2;
     align-self: auto; 
@@ -83,4 +80,5 @@ button {
 }
 #title {
     font-size: 3em; 
+    text-shadow: 1px 1px darkgray;
 }
