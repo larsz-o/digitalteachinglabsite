@@ -24,8 +24,9 @@ button {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     background-color: rgb(252, 252, 225)
   }
-  .card > h3 {
+  .card > h3{
       font-size: 1.5em; 
+      font-weight: lighter;
   }
   .card-container {
     margin-top: 10vh;
@@ -34,6 +35,9 @@ button {
   }
   .card-img{
       height: 300px;
+  }
+  .category-text{
+      font-size: 2em;
   }
 .flex-box {
     display: flex;
@@ -67,6 +71,9 @@ button {
 .no-borders {
     border: none;
 }
+.spacer{
+    height: 5vh;
+}
 .team-bio{
     flex-grow: 2;
     align-self: auto; 
@@ -84,5 +91,6 @@ button {
 }
 #title {
     font-size: 3em; 
+    font-weight: normal; 
     text-shadow: 1px 1px darkgray;
 }
