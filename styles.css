@@ -1,96 +1,231 @@
-html, body{
-    margin: 0;
-    width: 100%;
+/* Menu items */
+#main-menu-container {
+	background-color: white;
 }
+
+#main-navigation .main-nav ul li a {
+	color: #183572;
+	font-weight: 600;
+	font-size: 1.2em;
+}
+
+.menu {
+	background-color: #fff;
+	color: #0070a8;
+}
+
+.menu a {
+	color: #357EBD;
+	font-weight: 600;
+	height: 1.2em;
+	line-height: 1.1em;
+	padding: 0 .9em;
+}
+
+.menu-item {
+	background-color: white;
+}
+
+a:hover {
+	color: #357EBD;
+}
+
+/* Front Page Content items */
+.front-page .content-area {
+	font-size: medium;
+	background: #023479;
+/* Brandeis blue ^^^*/
+}
+
+#hero-image {
+	border-radius: 5%;
+	border: 2px solid #E8BD0F;
+/* Brandeis gold ^^^ */
+}
+
+main #featured-content .call-to-action .cta-button, main #featured-image .call-to-action .cta-button {
+	background: #E8BD0F;
+}
+
+main #featured-content .call-to-action .cta-button:hover, main #featured-image .call-to-action .cta-button:hover, main #featured-content .call-to-action .cta-button:focus, main #featured-image .call-to-action .cta-button:focus, main #featured-content .call-to-action .cta-button:active, main #featured-image .call-to-action .cta-button:active, main #featured-content .call-to-action .cta-button.active, main #featured-image .call-to-action .cta-button.active, .open > main #featured-content .call-to-action .cta-button.dropdown-toggle, .open > main #featured-image .call-to-action .cta-button.dropdown-toggle {
+	background: #357EBD;
+}
+
+/* Footer items */
+#footer {
+	background-color: #fff;
+	color: #183572;
+	font-weight: 500;
+}
+
+/* Hamburger Menu */
+#mobile-nav-button {
+	background: #357EBD;
+}
+
+#main-menu .container {
+	background: #ffffff;
+}
+
+/* Remove Home Page Widgets */
+.home-widgets {
+	display: none;
+}
+
+.home-widgets + .home-widgets {
+	display: block;
+}
+
+/* Otherwise alphabetically ordered CSS */
+
+@media only screen and (max-width: 600px) {
+	.category-text {
+		max-width: 100vw;
+		width: 100vw;
+		align-self: center;
+		overflow-wrap: break-word;
+	}
+	.card {
+		max-width: 100vw;
+		align-self: center;
+	}
+
+}
+
+@media only screen and (max-width: 450px) {
+	.category-text {
+		max-width: 100vw;
+		align-self: center;
+	}
+
+}
+
+html, body {
+	margin: 0;
+	width: 100%;
+	font-size: 1em;
+}
+
 button {
-    padding: 15px;
     border-radius: 5px;
-    background-color: rgb(8, 163, 214);
-    color: white;
-    font-size: 1em; 
-    cursor: pointer; 
+    padding: 8px; 
+	background-color: rgb(8,163,214);
+	color: white;
+	font-size: 1em;
+	cursor: pointer;
 }
+
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    border-radius: 5px; 
-    padding: 16px;
-    margin: 10vh; 
-    text-align: center; 
-    background-color: #f1f1f1;
-    width: 500px; 
-  }
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    background-color: rgb(252, 252, 225)
-  }
-  .card > h3{
-      font-size: 1.5em; 
-      font-weight: lighter;
-  }
-  .card-container {
-    margin-top: 10vh;
-    margin-left: 10vw;
-    margin-bottom: 10vh;
-  }
-  .card-img{
-      height: 300px;
-  }
-  .category-text{
-      font-size: 2em;
-  }
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: .3s;
+	border-radius: 5px;
+	padding: 15px;
+	margin: 10vh;
+	margin-left: 0;
+	text-align: center;
+	background-color: #f1f1f1;
+	align-self: center;
+	max-width: 350px;
+}
+
+.card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	background-color: rgb(252,252,225);
+	align-self: center;
+}
+
+.card > h3 {
+	font-size: 1.5em;
+	font-weight: lighter;
+}
+
+.card-container {
+	margin-top: 10vh;
+	margin-left: 5vw;
+	margin-bottom: 10vh;
+}
+
+.card-img {
+	width: 300px;
+}
+
+.category-text {
+	font-size: 2em;
+	align-self: center;
+	max-width: 400px;
+	hyphens: auto; 
+}
 .flex-box {
-    display: flex;
-    flex-direction: row; 
-    flex-wrap: nowrap;
-    justify-content: flex-start; 
-    align-items: baseline;
-    padding: 2px 16px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+/* 	padding: 2px 16px; */
 }
+
 .flex-center {
-    justify-content: center; 
+	justify-content: center;
 }
+
 .flex-end {
-    justify-content: flex-end; 
+	justify-content: flex-end;
 }
+
 .header {
-    text-align: right;
-    width: 100%;
-   font-size: 1.2em;
+	text-align: right;
+	width: 100%;
+	font-size: 1.2em;
 }
-.hero-spot{
-    background-color: #023479;
-    height: 60vh;
-    width: 100%; 
-    padding: 2%;
-    background-image: url('http://blogs.brandeis.edu/instructionaldesign/files/2019/05/adult-brickwalls-businesswoman-7363.jpg');
-    background-position: right bottom;
-    background-size: cover; 
-    position: relative;
+
+.hero-spot {
+	background-color: #023479;
+	height: 60vh;
+	width: 100%;
+	padding: 2%;
+	background-image: url('http://blogs.brandeis.edu/instructionaldesign/files/2019/05/adult-brickwalls-businesswoman-7363.jpg');
+	background-position: right bottom;
+	background-size: cover;
+	position: relative;
 }
+
 .no-borders {
-    border: none;
+	border: none;
 }
-.spacer{
-    height: 5vh;
+.nohyphen {
+	hyphens: none;
 }
-.team-bio{
-    flex-grow: 2;
-    align-self: auto; 
-    padding: 5vh;
-    font-size: 1.2em; 
+.spacer {
+	height: 5vh;
 }
-#team-heading { 
-    margin-bottom: 5vh; 
-    font-size: 1.4em;
+
+#subtitle {
+	margin-right: 5vw;
 }
-.team-photo{
-    align-self: flex-start;
-    height: 200px;
-    /* let's just work on getting images that are the same size */
+
+.team-bio {
+	flex-grow: 2;
+	align-self: auto;
+	padding: 5vh;
+	font-size: 1.2em;
+}
+
+#team-heading {
+	margin-bottom: 5vh;
+	font-size: 1.4em;
+}
+
+.team-photo {
+	align-self: flex-start;
+	height: 200px;
+/* let's just work on getting images that are the same size */
+}
+.text-container {
+	align-self: center;
 }
 #title {
-    font-size: 3em; 
-    font-weight: normal; 
-    text-shadow: 1px 1px darkgray;
+	font-size: 3em;
+	font-weight: normal;
+	text-shadow: 1px 1px darkgray;
+	margin-right: 5vw;
 }
