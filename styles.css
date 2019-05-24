@@ -112,10 +112,11 @@ html, body {
 	font-size: 1em;
 	background-color: #34373F;
 	hyphens: manual;
+	color:#001f3f;
 }
 
 a {
-	color: white;
+	color: #0074D9;
 }
 
 button {
@@ -155,6 +156,7 @@ button {
 	margin-top: 10vh;
 	margin-left: 5vw;
 	margin-bottom: 10vh;
+	justify-content: space-around;
 }
 
 .card-img {
@@ -168,7 +170,9 @@ button {
 	max-width: 400px;
 	hyphens: manual;
 }
-
+.center {
+	text-align: center;
+}
 .flex-box {
 	display: flex;
 	flex-direction: row;
@@ -217,11 +221,21 @@ button {
 .nohyphen {
 	hyphens: none;
 }
-
+.page-bottom {
+	margin-bottom: 25vh;
+}
 .powered, .copyright {
 	color: white;
 }
-
+.service-card {
+	height: 500px; 
+}
+.service-card > img {
+	height: 300px;
+}
+.service-card > h3 {
+	font-weight: bold;
+}
 .spacer {
 	height: 5vh;
 }
@@ -254,8 +268,7 @@ button {
 }
 
 .title {
-	font-weight: normal;
-	text-shadow: 1px 1px darkgray;
+	font-weight:bold;
 	margin-right: 5vw;
 	margin-top: 0;
 }
