@@ -1,21 +1,22 @@
 /* Menu items */
 #main-menu-container {
-	background-color: white;
+	background-color: #34373F;
 }
 
 #main-navigation .main-nav ul li a {
-	color: #183572;
+	color: white;
 	font-weight: 600;
 	font-size: 1.2em;
 }
 
 .menu {
-	background-color: #fff;
+	background-color: #34373F;
 	color: #0070a8;
+	color: white;
 }
 
 .menu a {
-	color: #357EBD;
+	color: white;
 	font-weight: 600;
 	height: 1.2em;
 	line-height: 1.1em;
@@ -23,24 +24,11 @@
 }
 
 .menu-item {
-	background-color: white;
+	background-color: #34373F;
 }
 
 a:hover {
-	color: #357EBD;
-}
-
-/* Front Page Content items */
-.front-page .content-area {
-	font-size: medium;
-	background: #023479;
-/* Brandeis blue ^^^*/
-}
-
-#hero-image {
-	border-radius: 5%;
-	border: 2px solid #E8BD0F;
-/* Brandeis gold ^^^ */
+	color: whitesmoke;
 }
 
 main #featured-content .call-to-action .cta-button, main #featured-image .call-to-action .cta-button {
@@ -53,7 +41,7 @@ main #featured-content .call-to-action .cta-button:hover, main #featured-image .
 
 /* Footer items */
 #footer {
-	background-color: #fff;
+	background-color: #34373F;
 	color: #183572;
 	font-weight: 500;
 }
@@ -77,38 +65,62 @@ main #featured-content .call-to-action .cta-button:hover, main #featured-image .
 }
 
 /* Otherwise alphabetically ordered CSS */
-
 @media only screen and (max-width: 600px) {
 	.category-text {
-		max-width: 100vw;
-		width: 100vw;
+		max-width: 100%;
+		width: 100%;
 		align-self: center;
 		overflow-wrap: break-word;
+		font-size: .75em;
 	}
+	
 	.card {
-		max-width: 100vw;
+		max-width: 100%;
 		align-self: center;
+		margin: 0;
 	}
-
+	
+	.flex-box {
+		padding: 5px;
+		border-top: 1px solid lightgray;
+		justify-content: center;
+	}
+	
+	.hero-spot {
+		height: 40vh;
+	}
+	
+	.title {
+		margin-right: 0;
+		overflow-wrap: break-word;
+		hyphens: manual;
+	}
 }
 
 @media only screen and (max-width: 450px) {
 	.category-text {
-		max-width: 100vw;
+		max-width: 100%;
 		align-self: center;
+		overflow-wrap: break-word;
+		hyphens: manual;
 	}
-
 }
 
 html, body {
 	margin: 0;
 	width: 100%;
 	font-size: 1em;
+	background-color: #34373F;
+	hyphens: manual;
+}
+
+a {
+	color: white;
 }
 
 button {
-    border-radius: 5px;
-    padding: 8px; 
+	border-radius: 5px;
+	padding: 8px;
 	background-color: rgb(8,163,214);
 	color: white;
 	font-size: 1em;
@@ -125,7 +137,7 @@ button {
 	text-align: center;
 	background-color: #f1f1f1;
 	align-self: center;
-	max-width: 350px;
+	width: 360px;
 }
 
 .card:hover {
@@ -147,14 +159,16 @@ button {
 
 .card-img {
 	width: 300px;
+	padding: 5px;
 }
 
 .category-text {
-	font-size: 2em;
+	font-size: 1.4em;
 	align-self: center;
 	max-width: 400px;
-	hyphens: auto; 
+	hyphens: manual;
 }
+
 .flex-box {
 	display: flex;
 	flex-direction: row;
@@ -162,6 +176,10 @@ button {
 	justify-content: flex-start;
 	align-items: center;
 /* 	padding: 2px 16px; */
+}
+.flex-box-nowrap{
+	flex-wrap: nowrap;
+	justify-content: space-between;
 }
 
 .flex-center {
@@ -175,57 +193,69 @@ button {
 .header {
 	text-align: right;
 	width: 100%;
-	font-size: 1.2em;
+	align-self: center;
+/* 	flex-grow: 3; */
+	height: 30vh;
+	margin-top: 10vh;
 }
 
 .hero-spot {
 	background-color: #023479;
 	height: 60vh;
 	width: 100%;
-	padding: 2%;
 	background-image: url('http://blogs.brandeis.edu/instructionaldesign/files/2019/05/adult-brickwalls-businesswoman-7363.jpg');
 	background-position: right bottom;
 	background-size: cover;
 	position: relative;
+	border-radius: 5px;
 }
 
 .no-borders {
 	border: none;
 }
+
 .nohyphen {
 	hyphens: none;
 }
+
+.powered, .copyright {
+	color: white;
+}
+
 .spacer {
 	height: 5vh;
 }
 
-#subtitle {
+.subtitle {
 	margin-right: 5vw;
 }
 
 .team-bio {
-	flex-grow: 2;
-	align-self: auto;
 	padding: 5vh;
 	font-size: 1.2em;
+	max-width: 40vw;
+	hyphens: manual;
 }
 
-#team-heading {
-	margin-bottom: 5vh;
+.team-heading {
+	margin: 5vh;
 	font-size: 1.4em;
 }
 
 .team-photo {
 	align-self: flex-start;
-	height: 200px;
+	height: 250px;
+	margin: 10px; 
 /* let's just work on getting images that are the same size */
 }
+
 .text-container {
 	align-self: center;
 }
-#title {
-	font-size: 3em;
+
+.title {
 	font-weight: normal;
 	text-shadow: 1px 1px darkgray;
 	margin-right: 5vw;
+	margin-top: 0;
 }
