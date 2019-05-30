@@ -193,6 +193,10 @@ button {
 .flex-end {
 	justify-content: flex-end;
 }
+.forms {
+	font-size: 1em; 
+	font-weight: normal;
+}
 
 .header {
 	text-align: right;
