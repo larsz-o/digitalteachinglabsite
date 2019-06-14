@@ -84,12 +84,16 @@ main #featured-content .call-to-action .cta-button:hover, main #featured-image .
 		padding: 5px;
 		border-top: 1px solid lightgray;
 		justify-content: center;
+		flex-wrap: wrap;
 	}
-	
 	.hero-spot {
 		height: 40vh;
 	}
-	
+
+	div.resource-container {
+		width: 100%;  
+		
+	}
 	.title {
 		margin-right: 0;
 		overflow-wrap: break-word;
@@ -112,7 +116,7 @@ html, body {
 	font-size: 1em;
 	background-color: #34373F;
 	hyphens: manual;
-	color:#001f3f;
+	color: #001f3f;
 }
 
 a {
@@ -170,18 +174,21 @@ button {
 	max-width: 400px;
 	hyphens: manual;
 }
+
 .center {
 	text-align: center;
 }
+
 .flex-box {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: flex-start;
 	align-items: center;
-/* 	padding: 2px 16px; */
+
 }
-.flex-box-nowrap{
+
+.flex-box-nowrap {
 	flex-wrap: nowrap;
 	justify-content: space-between;
 }
@@ -193,8 +200,14 @@ button {
 .flex-end {
 	justify-content: flex-end;
 }
+.flex-evenly {
+	justify-content: space-around; 
+}
+.flex-stretch {
+	align-items: stretch; 
+}
 .forms {
-	font-size: 1em; 
+	font-size: .75em;
 	font-weight: normal;
 }
 
@@ -218,6 +231,12 @@ button {
 	border-radius: 5px;
 }
 
+label {
+	font-weight: 400;
+}
+.main {
+	margin-left: 10vh;
+}
 .no-borders {
 	border: none;
 }
@@ -225,21 +244,42 @@ button {
 .nohyphen {
 	hyphens: none;
 }
+
 .page-bottom {
 	margin-bottom: 25vh;
 }
+
 .powered, .copyright {
 	color: white;
 }
-.service-card {
-	height: 500px; 
+.resource-card-container {
+	margin-top: 10vh;
+	margin-bottom: 10vh;
+	align-items: stretch;
+	align-content: center;
 }
+.resource-container {
+	width: 30vw; 
+	margin: 10px;
+}
+
+.responsive-img {
+	width: 100%;
+	height: auto;
+}
+
+.service-card {
+	height: 500px;
+}
+
 .service-card > img {
 	height: 300px;
 }
+
 .service-card > h3 {
 	font-weight: bold;
 }
+
 .spacer {
 	height: 5vh;
 }
@@ -263,7 +303,7 @@ button {
 .team-photo {
 	align-self: flex-start;
 	height: 250px;
-	margin: 10px; 
+	margin: 10px;
 /* let's just work on getting images that are the same size */
 }
 
@@ -272,7 +312,21 @@ button {
 }
 
 .title {
-	font-weight:bold;
+	font-weight: bold;
 	margin-right: 5vw;
 	margin-top: 0;
+}
+.wpcf7 input[type="submit"]{
+	text-align: left;
+	margin-left: 0px; 
+}
+
+.wpcf7 input[type="submit"]:hover {
+	background: rgb(8,163,214);
+	cursor: pointer;
+	color: white;
+
+}
+.wpcf7 label {
+	text-align: left;
 }
