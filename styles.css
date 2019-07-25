@@ -1,103 +1,49 @@
-/* Menu items */
-#main-menu-container {
-	background-color: #34373F;
+* {
+	box-sizing: border-box;
 }
-
-#main-navigation .main-nav ul li a {
-	color: white;
-	font-weight: 600;
-	font-size: 1.2em;
-}
-
-.menu {
-	background-color: #34373F;
-	color: #0070a8;
-	color: white;
-}
-
-.menu a {
-	color: white;
-	font-weight: 600;
-	height: 1.2em;
-	line-height: 1.1em;
-	padding: 0 .9em;
-}
-
-.menu-item {
-	background-color: #34373F;
-}
-
-a:hover {
-	color: whitesmoke;
-}
-
-main #featured-content .call-to-action .cta-button, main #featured-image .call-to-action .cta-button {
-	background: #E8BD0F;
-}
-
-main #featured-content .call-to-action .cta-button:hover, main #featured-image .call-to-action .cta-button:hover, main #featured-content .call-to-action .cta-button:focus, main #featured-image .call-to-action .cta-button:focus, main #featured-content .call-to-action .cta-button:active, main #featured-image .call-to-action .cta-button:active, main #featured-content .call-to-action .cta-button.active, main #featured-image .call-to-action .cta-button.active, .open > main #featured-content .call-to-action .cta-button.dropdown-toggle, .open > main #featured-image .call-to-action .cta-button.dropdown-toggle {
-	background: #357EBD;
-}
-
-/* Footer items */
-#footer {
-	background-color: #34373F;
-	color: #183572;
-	font-weight: 500;
-}
-
-/* Hamburger Menu */
-#mobile-nav-button {
-	background: #357EBD;
-}
-
-#main-menu .container {
-	background: #ffffff;
-}
-
-/* Remove Home Page Widgets */
-.home-widgets {
-	display: none;
-}
-
-.home-widgets + .home-widgets {
-	display: block;
-}
-
-/* Otherwise alphabetically ordered CSS */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px) {
 	.category-text {
 		max-width: 100%;
 		width: 100%;
 		align-self: center;
-		overflow-wrap: break-word;
+		overflow-wrap: normal;
 		font-size: .75em;
 	}
 	
 	.card {
 		max-width: 100%;
 		align-self: center;
-		margin: 0;
+	}
+	
+	.card-img {
+		min-width: 35vw;
 	}
 	
 	.flex-box {
 		padding: 5px;
-		border-top: 1px solid lightgray;
 		justify-content: center;
 		flex-wrap: wrap;
 	}
+	
 	.hero-spot {
 		height: 40vh;
 	}
-
+	
 	div.resource-container {
-		width: 100%;  
-		
+		width: 100%;
 	}
-	.title {
+	
+	.subtitle {
+		background-color: rgba(245,245,245,0.3);
+	}
+	
+	.category-text {
 		margin-right: 0;
-		overflow-wrap: break-word;
-		hyphens: manual;
+		overflow-wrap: normal;
+	}
+	
+	.title-link {
+		overflow-wrap: normal;
 	}
 }
 
@@ -105,23 +51,22 @@ main #featured-content .call-to-action .cta-button:hover, main #featured-image .
 	.category-text {
 		max-width: 100%;
 		align-self: center;
-		overflow-wrap: break-word;
-		hyphens: manual;
+		overflow-wrap: normal;
+	}
+	
+	.card-img {
+		min-width: 35vw;
 	}
 }
-
-html, body {
-	margin: 0;
-	width: 100%;
-	font-size: 1em;
-	background-color: #34373F;
-	hyphens: manual;
-	color: #001f3f;
-}
-
 a {
-	color: #0074D9;
+	text-decoration: none;
 }
+
+a:hover {
+	text-decoration: none;
+	color: #6EC1E4;
+}
+
 
 button {
 	border-radius: 5px;
@@ -132,51 +77,86 @@ button {
 	cursor: pointer;
 }
 
-.card {
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-	transition: .3s;
-	border-radius: 5px;
+#brandeisHeader {
+	display: none;
+}
+
+#brandeisFooter {
+	display: none;
+}
+
+.breathing-room {
+	margin-top: 8vh;
+}
+
+.blueprint-table {
+	border-bottom: 1px solid gray;
+	border-collapse: collapse;
 	padding: 15px;
-	margin: 10vh;
-	margin-left: 0;
-	text-align: center;
-	background-color: #f1f1f1;
-	align-self: center;
-	width: 360px;
 }
 
-.card:hover {
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-	background-color: rgb(252,252,225);
-	align-self: center;
-}
-
-.card > h3 {
-	font-size: 1.5em;
-	font-weight: lighter;
+.category-card {
+	padding: 15px;
+	margin-top: 0;
+	margin-bottom: 5vh;
+	margin-left: 5vw;
+	text-align: left;
+	align-self: flex-start;
+	background-color: #34373F;
+	color: whitesmoke;
 }
 
 .card-container {
 	margin-top: 10vh;
-	margin-left: 5vw;
-	margin-bottom: 10vh;
 	justify-content: space-around;
 }
 
 .card-img {
-	width: 300px;
-	padding: 5px;
+	width: 20vw;
 }
 
 .category-text {
 	font-size: 1.4em;
-	align-self: center;
-	max-width: 400px;
-	hyphens: manual;
+	align-self: flex-end;
+	max-width: 20vw;
+	margin-left: 5vw;
 }
 
 .center {
 	text-align: center;
+}
+.content-area {
+	background-color: white;
+	padding: 5px;
+}
+
+.demo-img {
+	width: 50%;
+	height: auto;
+}
+
+.demo-list {
+	margin-bottom: 25px;
+	margin-top: 8px;
+}
+
+.elementor-widget-tabs .elementor-tab-content {
+	color: #333333;
+}
+
+.elementor-text-editor .elementor-clearfix {
+	color: #333333;
+}
+
+.elementor-widget-tabs .elementor-tab-title.elementor-active {
+	color: #183572;
+}
+
+.feature-section {
+	background-color: #34373F;
+	color: whitesmoke;
+	width: 100%;
+	border-radius: 0 0 5px 5px;
 }
 
 .flex-box {
@@ -185,7 +165,6 @@ button {
 	flex-wrap: wrap;
 	justify-content: flex-start;
 	align-items: center;
-
 }
 
 .flex-box-nowrap {
@@ -200,28 +179,38 @@ button {
 .flex-end {
 	justify-content: flex-end;
 }
+
 .flex-evenly {
-	justify-content: space-around; 
+	justify-content: space-around;
 }
+
 .flex-stretch {
-	align-items: stretch; 
+	align-items: stretch;
 }
+
 .forms {
 	font-size: .75em;
 	font-weight: normal;
+}
+
+#footer-base {
+	background-color: white;
+}
+
+#footer.site-footer {
+	background-color: white;
 }
 
 .header {
 	text-align: right;
 	width: 100%;
 	align-self: center;
-/* 	flex-grow: 3; */
 	height: 30vh;
 	margin-top: 10vh;
 }
 
 .hero-spot {
-	background-color: #023479;
+	background-color: #ffffff;
 	height: 60vh;
 	width: 100%;
 	background-image: url('http://blogs.brandeis.edu/instructionaldesign/files/2019/05/adult-brickwalls-businesswoman-7363.jpg');
@@ -230,13 +219,78 @@ button {
 	position: relative;
 	border-radius: 5px;
 }
+/* Remove Home Page Widgets */
+.home-widgets {
+	display: none;
+}
 
+.home-widgets + .home-widgets {
+	display: block;
+}
+html, body {
+	margin: 0;
+	width: 100%;
+	font-size: 1em;
+	background-color: white;
+	color: #333333;
+}
 label {
 	font-weight: 400;
 }
+
+.large {
+	height: 20vh;
+}
+
 .main {
 	margin-left: 10vh;
 }
+/* Menu items */
+#main-menu-container {
+	background-color: #34373F;
+}
+
+#main-navigation .main-nav ul li a:hover {
+	color: #6EC1E4;
+}
+main #featured-content .call-to-action .cta-button, main #featured-image .call-to-action .cta-button {
+	background: #E8BD0F;
+}
+
+main #featured-content .call-to-action .cta-button:hover, main #featured-image .call-to-action .cta-button:hover, main #featured-content .call-to-action .cta-button:focus, main #featured-image .call-to-action .cta-button:focus, main #featured-content .call-to-action .cta-button:active, main #featured-image .call-to-action .cta-button:active, main #featured-content .call-to-action .cta-button.active, main #featured-image .call-to-action .cta-button.active, .open > main #featured-content .call-to-action .cta-button.dropdown-toggle, .open > main #featured-image .call-to-action .cta-button.dropdown-toggle {
+	background: #357EBD;
+}
+.menu {
+	background-color: #34373F;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+.menu a {
+	font-weight: 400;
+	font-size: 1.2em;
+	height: 1.2em;
+	line-height: 1.1em;
+	padding: 0 1em;
+}
+
+.menu-item {
+	background-color: #34373F;
+	align-self: flex-end;
+}
+/* Hamburger Menu */
+#mobile-nav-button {
+	background: #357EBD;
+}
+
+#main-menu .container {
+	background: #ffffff;
+}
+#menu-social-container {
+	display: none;
+}
+
 .no-borders {
 	border: none;
 }
@@ -249,8 +303,17 @@ label {
 	margin-bottom: 25vh;
 }
 
+.placeholder {
+	width: 30vw;
+}
+
+.post-entry {
+	width: 100%;
+}
+
 .powered, .copyright {
 	color: white;
+	display: none;
 }
 .resource-card-container {
 	margin-top: 10vh;
@@ -258,14 +321,19 @@ label {
 	align-items: stretch;
 	align-content: center;
 }
+
 .resource-container {
-	width: 30vw; 
+	width: 30vw;
 	margin: 10px;
 }
 
 .responsive-img {
 	width: 100%;
 	height: auto;
+}
+
+.scroll-top {
+	display: none;
 }
 
 .service-card {
@@ -280,12 +348,46 @@ label {
 	font-weight: bold;
 }
 
+/* prevents weird behavior where submenu items are hidden if parent is active */
+.sidebar .main-navigation .main-nav .current-menu-item .sub-menu, 
+.sidebar .main-navigation .main-nav .current-menu-ancestor .sub-menu {
+	opacity: 1;
+	left: auto;
+	right: auto !important;
+	position: relative;
+	width: 100%;
+	clear: both !important;
+	top: auto;
+	float: none;
+	visibility: visible;
+	pointer-events: auto;
+	height: auto;
+	display: block;
+}
+
+.sidebar .current-menu-item .dropdown-menu-toggle, 
+.sidebar .current-menu-ancestor .dropdown-menu-toggle {
+	display: none;
+}
+.small {
+	height: 5vh;
+}
+
 .spacer {
 	height: 5vh;
 }
 
 .subtitle {
-	margin-right: 5vw;
+	margin-right: 5px;
+}
+
+.table-left {
+	width: 10vw;
+	background-color: #e6e6e6;
+	color: black;
+	border-bottom: 1px solid gray;
+	border-collapse: collapse;
+	vertical-align: middle;
 }
 
 .team-bio {
@@ -309,6 +411,7 @@ label {
 
 .text-container {
 	align-self: center;
+	justify-content: flex-end;
 }
 
 .title {
@@ -316,17 +419,29 @@ label {
 	margin-right: 5vw;
 	margin-top: 0;
 }
-.wpcf7 input[type="submit"]{
-	text-align: left;
-	margin-left: 0px; 
+
+.title-link {
+	font-weight: 400;
+	font-size: 1.75em;
+	background-color: #34373F;
+	margin-top: 15vh;
+	margin-bottom: 0;
+	padding: 5vh;
+	border-radius: 5px 5px 0 0;
+	color: #6EC1E4;
+	width: 100%;
+}
+
+#contact-submit {
+	margin-left: 0;
 }
 
 .wpcf7 input[type="submit"]:hover {
 	background: rgb(8,163,214);
 	cursor: pointer;
 	color: white;
-
 }
+
 .wpcf7 label {
 	text-align: left;
 }
