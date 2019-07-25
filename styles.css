@@ -1,6 +1,7 @@
 * {
 	box-sizing: border-box;
 }
+
 @media only screen and (max-width: 1024px) {
 	.category-text {
 		max-width: 100%;
@@ -58,6 +59,7 @@
 		min-width: 35vw;
 	}
 }
+
 a {
 	text-decoration: none;
 }
@@ -66,7 +68,6 @@ a:hover {
 	text-decoration: none;
 	color: #6EC1E4;
 }
-
 
 button {
 	border-radius: 5px;
@@ -102,8 +103,8 @@ button {
 	margin-left: 5vw;
 	text-align: left;
 	align-self: flex-start;
-	background-color: #34373F;
-	color: whitesmoke;
+/* 	background-color: #34373F;
+	color: whitesmoke; */
 }
 
 .card-container {
@@ -120,11 +121,13 @@ button {
 	align-self: flex-end;
 	max-width: 20vw;
 	margin-left: 5vw;
+	color: #0072C8;
 }
 
 .center {
 	text-align: center;
 }
+
 .content-area {
 	background-color: white;
 	padding: 5px;
@@ -152,11 +155,17 @@ button {
 	color: #183572;
 }
 
+.elementor-tab-title, .elemntor-tab-desktop-title {
+	color: #0072C8;
+}
+
 .feature-section {
-	background-color: #34373F;
-	color: whitesmoke;
+/* 	background-color: #34373F;
+	color: whitesmoke; */
 	width: 100%;
-	border-radius: 0 0 5px 5px;
+	border: 2px solid #0072C8;
+	box-shadow: 7px 9px 0px #0072C8;
+	margin-bottom: 20vh;
 }
 
 .flex-box {
@@ -213,12 +222,15 @@ button {
 	background-color: #ffffff;
 	height: 60vh;
 	width: 100%;
-	background-image: url('http://blogs.brandeis.edu/instructionaldesign/files/2019/05/adult-brickwalls-businesswoman-7363.jpg');
 	background-position: right bottom;
 	background-size: cover;
 	position: relative;
 	border-radius: 5px;
+		border: 2px solid #0072C8;
+	box-shadow: 7px 9px 0px #0072C8;
+	color: #0072C8;
 }
+
 /* Remove Home Page Widgets */
 .home-widgets {
 	display: none;
@@ -227,6 +239,7 @@ button {
 .home-widgets + .home-widgets {
 	display: block;
 }
+
 html, body {
 	margin: 0;
 	width: 100%;
@@ -234,6 +247,7 @@ html, body {
 	background-color: white;
 	color: #333333;
 }
+
 label {
 	font-weight: 400;
 }
@@ -245,14 +259,16 @@ label {
 .main {
 	margin-left: 10vh;
 }
+
 /* Menu items */
 #main-menu-container {
-	background-color: #34373F;
+	background-color: #0072C8;
 }
 
 #main-navigation .main-nav ul li a:hover {
 	color: #6EC1E4;
 }
+
 main #featured-content .call-to-action .cta-button, main #featured-image .call-to-action .cta-button {
 	background: #E8BD0F;
 }
@@ -260,8 +276,9 @@ main #featured-content .call-to-action .cta-button, main #featured-image .call-t
 main #featured-content .call-to-action .cta-button:hover, main #featured-image .call-to-action .cta-button:hover, main #featured-content .call-to-action .cta-button:focus, main #featured-image .call-to-action .cta-button:focus, main #featured-content .call-to-action .cta-button:active, main #featured-image .call-to-action .cta-button:active, main #featured-content .call-to-action .cta-button.active, main #featured-image .call-to-action .cta-button.active, .open > main #featured-content .call-to-action .cta-button.dropdown-toggle, .open > main #featured-image .call-to-action .cta-button.dropdown-toggle {
 	background: #357EBD;
 }
+
 .menu {
-	background-color: #34373F;
+	background-color: #0072C8;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -276,9 +293,10 @@ main #featured-content .call-to-action .cta-button:hover, main #featured-image .
 }
 
 .menu-item {
-	background-color: #34373F;
+	background-color: #0072C8;
 	align-self: flex-end;
 }
+
 /* Hamburger Menu */
 #mobile-nav-button {
 	background: #357EBD;
@@ -287,6 +305,7 @@ main #featured-content .call-to-action .cta-button:hover, main #featured-image .
 #main-menu .container {
 	background: #ffffff;
 }
+
 #menu-social-container {
 	display: none;
 }
@@ -315,6 +334,7 @@ main #featured-content .call-to-action .cta-button:hover, main #featured-image .
 	color: white;
 	display: none;
 }
+
 .resource-card-container {
 	margin-top: 10vh;
 	margin-bottom: 10vh;
@@ -369,6 +389,7 @@ main #featured-content .call-to-action .cta-button:hover, main #featured-image .
 .sidebar .current-menu-ancestor .dropdown-menu-toggle {
 	display: none;
 }
+
 .small {
 	height: 5vh;
 }
@@ -378,8 +399,8 @@ main #featured-content .call-to-action .cta-button:hover, main #featured-image .
 }
 
 .subtitle {
-	margin-right: 5px;
-}
+	margin-right: 5vw;
+} 
 
 .table-left {
 	width: 10vw;
@@ -416,20 +437,20 @@ main #featured-content .call-to-action .cta-button:hover, main #featured-image .
 
 .title {
 	font-weight: bold;
-	margin-right: 5vw;
 	margin-top: 0;
+	margin-right: 8vw;
+font-size: 2em;
 }
 
 .title-link {
 	font-weight: 400;
-	font-size: 1.75em;
-	background-color: #34373F;
-	margin-top: 15vh;
-	margin-bottom: 0;
-	padding: 5vh;
-	border-radius: 5px 5px 0 0;
-	color: #6EC1E4;
-	width: 100%;
+	font-size: 2em;
+	color: #0072C8;
+	display: block;
+	padding: 5px;
+	margin-left: 3vw;
+	margin-top: 5vh;
+	padding-bottom: 10px;
 }
 
 #contact-submit {
